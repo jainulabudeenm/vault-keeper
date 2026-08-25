@@ -62,6 +62,11 @@ echo "/plugin marketplace add jainulabudeenm/vault-keeper" >> "$R/skills/demo/SK
 assert_exit "github handle allowed in skill body" 0 "$R"
 
 R="$(mkfixture)"
+echo "# Conventions" > "$R/conventions.md"
+echo "route it to porter-work" >> "$R/conventions.md"
+assert_exit "leak in a shipped root doc fails" 1 "$R"
+
+R="$(mkfixture)"
 printf 'A sentence %s with an em dash.\n' "$(printf '\xe2\x80\x94')" >> "$R/README.md"
 assert_exit "em dash in README fails" 1 "$R"
 

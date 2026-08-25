@@ -13,7 +13,7 @@ status=0
 # ponytail: find-based globbing, fine at this repo size.
 scoped_files() {
   find "$ROOT/skills" "$ROOT/commands" -name '*.md' -type f 2>/dev/null
-  find "$ROOT" -maxdepth 1 -name '*.example.md' -type f 2>/dev/null
+  find "$ROOT" -maxdepth 1 -name '*.md' -not -name 'README.md' -type f 2>/dev/null
   return 0
 }
 
