@@ -1,5 +1,5 @@
 {
-  "name": "vault-keeper",
+  "name": "@jainulabudeenm/vault-keeper",
   "version": "1.0.0",
   "description": "Install the Vault Keeper skills for Claude. Capture notes, save conversations with sensitivity routing, and keep a markdown vault indexed and linked.",
   "keywords": [

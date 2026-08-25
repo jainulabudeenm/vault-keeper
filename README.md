@@ -21,8 +21,11 @@ In Claude Code, as a plugin. This is the one to use, because it brings all three
 From npm, which also covers Claude.ai and anywhere outside Claude Code:
 
 ```
-npx vault-keeper
+npx @jainulabudeenm/vault-keeper
 ```
+
+The npm name is scoped because plain `vault-keeper` is blocked as too close to an existing package.
+The plugin route above uses the short name.
 
 Add `--project` to install into the current repo instead of your home directory, so you can commit
 it and share it with a team.
