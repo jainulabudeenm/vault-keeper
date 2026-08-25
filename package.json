@@ -1,0 +1,40 @@
+{
+  "name": "vault-keeper",
+  "version": "1.0.0",
+  "description": "Install the Vault Keeper skills for Claude. Capture notes, save conversations with sensitivity routing, and keep a markdown vault indexed and linked.",
+  "keywords": [
+    "claude",
+    "claude-skill",
+    "claude-code",
+    "obsidian",
+    "markdown",
+    "notes",
+    "knowledge-management",
+    "para"
+  ],
+  "author": "Zain Hasan",
+  "license": "MIT",
+  "bin": {
+    "vault-keeper": "bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "skills/vault-groom.skill",
+    "skills/vault-capture.skill",
+    "skills/vault-save-chat.skill",
+    "conventions.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jainulabudeenm/vault-keeper.git"
+  },
+  "homepage": "https://github.com/jainulabudeenm/vault-keeper#readme",
+  "bugs": {
+    "url": "https://github.com/jainulabudeenm/vault-keeper/issues"
+  }
+}

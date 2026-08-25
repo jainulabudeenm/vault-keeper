@@ -1,0 +1,11 @@
+name: check-leaks
+on: [push, pull_request]
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Release gate
+        run: bash scripts/check-leaks.sh .
+      - name: Gate self-test
+        run: bash tests/test-check-leaks.sh

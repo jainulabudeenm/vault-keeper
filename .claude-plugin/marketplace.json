@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "vault-keeper",
+  "description": "The bookkeeping layer for a markdown notes vault.",
+  "owner": {
+    "name": "Zain",
+    "url": "https://github.com/jainulabudeenm"
+  },
+  "plugins": [
+    {
+      "name": "vault-keeper",
+      "description": "Captures notes, saves conversations without leaking the private ones, and keeps indexes and links current. Never commits, never pushes.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

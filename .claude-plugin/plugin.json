@@ -1,0 +1,9 @@
+{
+  "name": "vault-keeper",
+  "version": "0.1.0",
+  "description": "Three skills that keep a markdown notes vault usable: capture a thought into a properly filed note, save a conversation with sensitivity routing, and do the indexing and linking nobody ever gets round to.",
+  "author": {
+    "name": "Zain",
+    "url": "https://github.com/jainulabudeenm"
+  }
+}
