@@ -28,7 +28,7 @@ rather than interrogate.
    straight into a permanent home. Propose the inbox folder if there is one.
 4. **What must never be auto-edited?** This is the important one, so do not rush it. Journals,
    anything personal, frozen source material, private folders. Get exact paths. Everything listed
-   here becomes gated for all three skills, permanently.
+   here becomes gated for every skill in this set, permanently.
 5. **Where does confidential material go?** A folder excluded from git, for anything that must not
    reach a remote. If they do not have one, suggest making one and adding it to `.gitignore`.
 6. **Is the vault in git?** If it is, whether anything commits automatically, and confirm out loud

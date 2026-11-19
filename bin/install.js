@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const os = require('os');
 
-const SKILLS = ['vault-groom', 'vault-capture', 'vault-save-chat'];
+const SKILLS = ['vault-groom', 'vault-capture', 'vault-save-chat', 'vault-end-of-day'];
 const PKG = path.join(__dirname, '..');
 
 const args = process.argv.slice(2);
@@ -54,6 +54,7 @@ console.log(`\nHow to use:`);
 console.log(`   "capture this" turns a braindump into one properly filed note`);
 console.log(`   "save this chat" freezes the conversation, private ones routed out of git`);
 console.log(`   "groom the vault" updates indexes, links, state files and the session log`);
+console.log(`   "log my day" splits a whole day's dump and files each piece where it belongs`);
 console.log(`   First run asks where your vault is and what must never be auto-edited`);
 
 console.log(`\nThese skills never commit and never push. Reviewing the diff is your gate.`);
@@ -63,4 +64,4 @@ console.log(`/vault-keeper-init and /vault-groom commands:`);
 console.log(`  /plugin marketplace add jainulabudeenm/vault-keeper`);
 console.log(`  /plugin install vault-keeper`);
 
-console.log(`\nTo update later: npx vault-keeper@latest\n`);
+console.log(`\nTo update later: npx @jainulabudeenm/vault-keeper@latest\n`);

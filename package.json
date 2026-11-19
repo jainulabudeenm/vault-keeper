@@ -22,6 +22,7 @@
     "skills/vault-groom.skill",
     "skills/vault-capture.skill",
     "skills/vault-save-chat.skill",
+    "skills/vault-end-of-day.skill",
     "conventions.md",
     "README.md",
     "LICENSE"

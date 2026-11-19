@@ -1,6 +1,6 @@
 # Vault conventions
 
-The defaults these three skills assume. None of it is mandatory. Your profile overrides any of it,
+The defaults these skills assume. None of it is mandatory. Your profile overrides any of it,
 and the skills read your profile first.
 
 It is written down because a convention that only lives in one person's head is not a convention, it

@@ -1,6 +1,6 @@
 # Vault Keeper
 
-Three Claude skills that do the bookkeeping on a markdown notes vault, so it stays worth having.
+Four Claude skills that do the bookkeeping on a markdown notes vault, so it stays worth having.
 
 Every notes system decays the same way. Indexes go stale. Nothing gets linked to anything. The file
 that is supposed to say what you are working on says what you were working on in March. Nobody skips
@@ -10,7 +10,7 @@ That is exactly the shape of work to hand to an agent.
 
 ## Install
 
-In Claude Code, as a plugin. This is the one to use, because it brings all three skills plus the
+In Claude Code, as a plugin. This is the one to use, because it brings all four skills plus the
 `/vault-keeper-init` and `/vault-groom` commands:
 
 ```
@@ -30,7 +30,7 @@ The plugin route above uses the short name.
 Add `--project` to install into the current repo instead of your home directory, so you can commit
 it and share it with a team.
 
-## The three skills
+## The four skills
 
 **`vault-capture`** turns a braindump into one filed note. It asks the few questions whose answers
 you will want later and cannot reconstruct: why this mattered, what it connects to, where it
@@ -42,6 +42,12 @@ private one never lands in a folder that gets pushed.
 
 **`vault-groom`** is the maintenance sweep. Index rows, links between related notes, the state file
 for anything that changed, a session log entry. Run it at the end of a working session.
+
+**`vault-end-of-day`** takes your whole day in one messy dump, voice to text and meeting transcripts
+included, splits it into pieces and files each one where it belongs: the journal, the right project,
+the learning log, the inbox. It freezes raw transcripts before it summarises them. If part of your
+vault is shared, such as a work repo nested inside it, it keeps anything personal out of that part,
+and when it is unsure it keeps the piece private.
 
 ## Use
 
@@ -55,6 +61,10 @@ for anything that changed, a session log entry. Run it at the end of a working s
 
 ```
 > groom the vault
+```
+
+```
+> log my day: standup ran long, we cut the onboarding scope, then I finally fixed the sync bug
 ```
 
 First run asks where your vault is, what shape it has, and **what must never be auto-edited**. That

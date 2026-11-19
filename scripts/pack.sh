@@ -6,7 +6,7 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
-for name in vault-groom vault-capture vault-save-chat; do
+for name in vault-groom vault-capture vault-save-chat vault-end-of-day; do
   rm -f "skills/$name.skill"
   (cd skills && zip -qrD "$name.skill" "$name" -x '.*' -x '*/.*')
   echo "packed skills/$name.skill"
