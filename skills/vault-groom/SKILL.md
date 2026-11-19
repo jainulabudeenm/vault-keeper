@@ -85,6 +85,15 @@ human wrote it. You may draft a suggested entry and show it. The human keeps it 
 plan or spec change that is authoring rather than status. Collect these and surface them at the end
 as a short list.
 
+**Agent memory inbox (Claude Code only, propose then confirm).** Claude Code keeps private memory
+notes for each project outside git, in `~/.claude/projects/<project path, with / as ->/memory/`.
+Facts that land there are invisible to other agents, to other machines and to the vault itself.
+List the notes that changed since the last groom (the newest session log block marks it). For each
+one, propose a home in the vault: the right state file, a project or area note, or the vault's rules
+file. Sensitive facts go on a list for the user to move by hand into a gated path. Move nothing
+without a yes. After a fact moves, offer to delete the memory note so the two copies do not drift.
+Other agents skip this step.
+
 ## Respect local rules
 
 Read a folder's own instructions file before touching it, if it has one. **Local rules win.** If a
@@ -113,4 +122,4 @@ it, the table has to say why. A silent omission and a deliberate skip look ident
 otherwise, and only one of them is fine.
 
 Then summarise in three lines: what you wrote, what you drafted for review, and what you are
-proposing. Remind them the changes are local and nothing was committed.
+proposing (including any memory notes waiting for a home). Remind them the changes are local and nothing was committed.
